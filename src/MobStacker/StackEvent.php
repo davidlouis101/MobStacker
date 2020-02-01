@@ -41,6 +41,6 @@ class StackEvent implements Listener{
     public function onSpawn(EntitySpawnEvent $e): void{
         $entity = $e->getEntity();
         if(!$entity instanceof Living && !$entity instanceof Player) return;
-        StackFactory::addToClosestStack($entity, 16);
+        StackFactory::addToClosestStack($entity, 20);
     }
 }
